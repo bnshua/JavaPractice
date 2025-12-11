@@ -19,5 +19,24 @@ public class UserInput {
         double height = Double.parseDouble(input.nextLine());
         System.out.println("You are " + height + " meters tall.");
 
+        System.out.println("Enter your first word:");
+        String word1 = input.nextLine();
+
+        System.out.println("Enter your second word:");
+        String word2 = input.nextLine();
+
+        System.out.println("Enter number 1:");
+        int num1 = Integer.parseInt(input.nextLine());
+
+        System.out.println("Enter number 2:");
+        int num2 = Integer.parseInt(input.nextLine());
+
+      
+        int finalNum = (num1 + num2) % 100;
+
+
+        String email = word1 + word2 + finalNum + "@csaea.com";
+
+        System.out.println("Generated email: " + email);
     }
 }
