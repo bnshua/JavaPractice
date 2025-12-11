@@ -19,6 +19,7 @@ public class UserInput {
         double height = Double.parseDouble(input.nextLine());
         System.out.println("You are " + height + " meters tall.");
 
+        // Challenge 1: Email generator
         System.out.println("Enter your first word:");
         String word1 = input.nextLine();
 
@@ -31,12 +32,28 @@ public class UserInput {
         System.out.println("Enter number 2:");
         int num2 = Integer.parseInt(input.nextLine());
 
-      
         int finalNum = (num1 + num2) % 100;
 
-
         String email = word1 + word2 + finalNum + "@csaea.com";
-
         System.out.println("Generated email: " + email);
+
+  
+        System.out.println("Enter a number to divide:");
+        double firstDouble = Double.parseDouble(input.nextLine());
+
+        System.out.println("Enter another number to divide by:");
+        double secondDouble = Double.parseDouble(input.nextLine());
+
+        double result = firstDouble / secondDouble;
+        System.out.println("Result: " + result);
+
+   
+        System.out.println("Enter the diameter of a circle:");
+        double diameter = Double.parseDouble(input.nextLine());
+
+        double radius = diameter / 2.0;
+        double area = Math.PI * radius * radius;
+
+        System.out.println("The area of the circle is: " + area);
     }
 }
