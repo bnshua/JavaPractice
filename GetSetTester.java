@@ -21,10 +21,10 @@ public class GetSetTester {
         String user = input.nextLine();
         player3.setUsername(userInput);
         System.out.println(player3.getUsername());
-
+//challenge 1
         GetSet ID = new GetSet();
         System.out.print("Enter your ID number: ")
-        int ID = input.nextLine();
+        String ID = input.nextLine();
         ID.setID = input.nextLine(userInput);
         System.out.println(ID.getID());
 
@@ -50,7 +50,7 @@ public class GetSetTester {
 }
 class GetSet{
     private String username = "No user name";
-    private int ID = "No ID";
+    private String ID = "No ID";
     private String rank = "No rank";
     public String getUsername(){
         return username;
@@ -61,7 +61,7 @@ class GetSet{
     public int getID(){
         return ID;
     }
-    public void setID(int newID){
+    public void setID(String newID){
         this.ID = newID
     }
     public String rank(){

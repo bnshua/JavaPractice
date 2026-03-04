@@ -1,0 +1,81 @@
+import java.util.ArrayList;
+import math.random; // add for chal 1
+import java.util.Scanner; //add for chal 2
+
+class Class {
+}
+
+public class ArrayListDemo {
+    public static void main(String[] args){
+        ArrayList<Integer> list = new ArrayList<Integer>(5);
+        System.out.println(list);
+        System.out.println(list.size());
+
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        System.out.println(list);
+        System.out.println(list.size());
+        list.add(1, 5);
+        System.out.println(list);
+        System.out.println(list.get(1));
+        System.out.println(list);
+        list.remove(Integer.valueOf(5));
+        System.out.println(list);
+        System.out.println("Contains 5: " + list.contains(5));
+        Collections.sort(list);
+        System.out.println(list);
+        Integer[] arr = list.toArray(new Integer[0]);
+        for (int val : arr) {
+           System.out.print(val + " ");
+        }
+        ArrayList<Integer> splitList = new ArrayList<Integer>(list.subList(3,list.size()))
+        System.out.println(splitList);
+    }   
+
+    public class ChallengeOne {
+        public static void main(String[] args){
+            ArrayList<Integer> numbers = new ArrayList<>();
+            Random rand = new Random();
+            for (int i = 0; i < 10; i++){
+                number.add(rand.nextInt(10)); //numbers between 1-9
+            }
+            for (int i = numbers.size() -1; i >= 0; i--){
+                if (numbers.get(i) % 2) {
+                    numbers.remove(i);
+                }
+            System.out.println("List (No odds)" + numbers);
+            }
+        }
+    }
+
+    public class ChallengeTwo { 
+        public static void main(String[] args){
+            Scanner scanner = new Scanner(System.in);
+            ArrayList<String> guests = new ArrayList<>();
+            guest.add("Joshua");
+            guest.add("Emerson");
+            guest.add("Tyler Ondovik");
+            guest.add("Colin Flynn");
+            System.out.println("Enter guest name (type exit to quit): ");
+            while (true) {
+                System.out.print("Name: ");
+                String name = scanner.nextLine();
+                if (name.equals("exit")) {
+                    break;
+                }
+                if (guests.contains(name)){
+
+                    System.out.println("This person is invited!");
+                } else  {
+                    System.out.println("This person is not invited!")
+                }
+            }
+        }
+    }
+    //i don't know how to do challenge 3
+
+
+}
